@@ -1,0 +1,7 @@
+SQL links:-
+----
+https://onecompiler.com/mysql
+
+https://sqliteonline.com/
+
+https://www.dofactory.com/sql/editor
