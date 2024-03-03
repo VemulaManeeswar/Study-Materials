@@ -1,0 +1,260 @@
+ORDERBY
+clause is used to sort the result set of a query based on one or more columns. You can specify the sorting order as ascending (ASC) or descending (DESC).
+
+
+SELECT student_id, name, score
+FROM students
+ORDER BY score DESC;
+
+
+select AID,Name,Profit_Percent,WorkArea FROM agents ORDER BY WorkArea DESC;
+
+--------------------------END OF ORDER BY-------------------------
+
+CREATE TABLE orders (
+    order_id INT PRIMARY KEY,
+    customer_id INT,
+    order_date DATE,
+    total_amount DECIMAL(10, 2)
+);
+
+INSERT INTO orders (order_id, customer_id, order_date, total_amount)
+VALUES
+    (1, 101, '2023-10-16', 125.50),
+    (2, 102, '2023-10-17', 230.75),
+    (3, 101, '2023-10-17', 75.25),
+    (4, 103, '2023-10-18', 150.00),
+    (5, 102, '2023-10-18', 99.99);
+
+
+CREATE TABLE customers1 (
+    ID INT PRIMARY KEY,
+    NAME VARCHAR(50),
+    AGE INT,
+    ADDRESS VARCHAR(100),
+    SALARY DECIMAL(10, 2)
+);
+
+
+INSERT INTO customers1 (ID, NAME, AGE, ADDRESS, SALARY)
+VALUES
+    (9, 'Aakash Yadav', 32, 'Mumbai', 43500.00),
+    (3, 'Ajeet Bhargav', 45, 'Meerut', 65000.00),
+    (5, 'Balwant Singh', 45, 'Varanasi', 36000.00),
+    (1, 'Himani Gupta', 21, 'Modinagar', 22000.00),
+    (6, 'Mahesh Sharma', 26, 'Mathura', 22000.00),
+    (8, 'Neeru Sharma', 29, 'Pune', 40000.00),
+    (4, 'Ritesh Yadav', 36, 'Azamgarh', 26000.00),
+    (7, 'Rohit Shrivastav', 19, 'Ahmedabad', 38000.00),
+    (10, 'Sahil Sheikh', 35, 'Aurangabad', 68800.00),
+    (2, 'Shiva Tiwari', 22, 'Bhopal', 21000.00);
+
+
+CREATE TABLE agents (
+    AID INT PRIMARY KEY,
+    Name VARCHAR(50),
+    WorkArea VARCHAR(50),
+    Profit_Percent INT,
+    ContactNumber BIGINT,
+    Salary DECIMAL(10, 2)
+);
+
+
+INSERT INTO agents (AID, Name, WorkArea, Profit_Percent, ContactNumber, Salary)
+VALUES
+    (1, 'Gurpreet Singh', 'Bangalore', 1, 9989675432, 43000.00),
+    (2, 'Sakshi Kumari', 'Chennai', 5, 8190567342, 25000.00),
+    (3, 'Prachi Desai', 'Mumbai', 2, 9056123432, 60000.00),
+    (4, 'Shivani More', 'Pune', 3, 8894236789, 35500.00),
+    (5, 'Pallavi Singh', 'Delhi', 4, 7798092341, 38700.00),
+    (6, 'Rohini Kulkarni', 'Ambala', 8, 7890945612, 25670.00),
+    (7, 'Shweta Dixit', 'Chandigarh', 6, 8898786453, 31670.00),
+    (8, 'Sonakshi Tiwari', 'Udaipur', 2, 9809453421, 25050.00),
+    (9, 'Anushka Tripathi', 'Ujjain', 9, 8909124326, 38000.00),
+    (10, 'Devika Sharma', 'Goa', 7, 7864523145, 44050.00);
+
+
+GROUPBY
+ clause is used to group rows that have the same values in specified columns into summary rows, typically with an aggregate function applied.
+-----------------------------
+
+
+CREATE TABLE Employee (
+    S_no INT PRIMARY KEY,
+    Name VARCHAR(50),
+    AGE INT,
+    Salary DECIMAL(10, 2)
+);
+
+
+INSERT INTO Employee (S_no, Name, AGE, Salary)
+VALUES
+    (1, 'John', 24, 25000.00),
+    (2, 'Nick', 22, 22000.00),
+    (3, 'Amara', 25, 15000.00),
+    (4, 'Nick', 22, 22000.00),
+    (5, 'John', 24, 25000.00);
+
+
+CREATE TABLE Student (
+    SUBJECT VARCHAR(50),
+    YEAR INT,
+    NAME VARCHAR(50)
+);
+
+
+INSERT INTO Student (SUBJECT, YEAR, NAME)
+VALUES
+    ('C language', 2, 'John'),
+    ('C language', 2, 'Ginny'),
+    ('C language', 2, 'Jasmeen'),
+    ('C language', 3, 'Nick'),
+    ('C language', 3, 'Amara'),
+    ('Java', 1, 'Sifa'),
+    ('Java', 1, 'Dolly');
+
+	Group By single column
+	Group By based on several columns
+
+
+SELECT customer_id, SUM(total_amount) as total_order_amount FROM orders GROUP BY customer_id;
+
+SELECT customer_id, SUM(total_amount) FROM orders GROUP BY customer_id;
+
+SELECT NAME, SUM(Salary) FROM Employee GROUP BY Name;
+------------------------
+CREATE TABLE employees (
+    employee_id INT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    department VARCHAR(50),
+    job_title VARCHAR(50),
+    salary DECIMAL(10, 2)
+);
+
+INSERT INTO employees VALUES
+(1, 'John', 'Doe', 'IT', 'Developer', 70000.00),
+(2, 'Jane', 'Smith', 'HR', 'HR Specialist', 60000.00),
+(3, 'Bob', 'Johnson', 'IT', 'System Analyst', 80000.00),
+(4, 'Alice', 'Williams', 'Finance', 'Accountant', 75000.00),
+(5, 'Charlie', 'Brown', 'Marketing', 'Marketing Coordinator', 65000.00),
+(6, 'Eva', 'Davis', 'HR', 'Recruiter', 70000.00),
+(7, 'Frank', 'Miller', 'Finance', 'Financial Analyst', 82000.00),
+(8, 'Grace', 'Taylor', 'Marketing', 'Marketing Manager', 90000.00);
+
+
+Basic GROUP BY:
+
+SELECT department, COUNT(*) as employee_count
+FROM employees
+GROUP BY department;
+
+
+
+GROUP BY with ORDER BY:
+
+SELECT department, COUNT(*) as employee_count
+FROM employees
+GROUP BY department
+ORDER BY employee_count DESC;
+
+
+GROUP BY with HAVING:
+
+SELECT department, COUNT(*) as employee_count
+FROM employees
+GROUP BY department
+HAVING employee_count > 5;
+
+
+GROUP BY with multiple columns:
+
+SELECT department, job_title, AVG(salary) as avg_salary
+FROM employees
+GROUP BY department, job_title
+ORDER BY department, avg_salary DESC;
+
+
+Filtering using HAVING and ORDER BY together:
+
+SELECT department, job_title, AVG(salary) as avg_salary
+FROM employees
+GROUP BY department, job_title
+HAVING avg_salary > 70000
+ORDER BY avg_salary DESC;
+
+
+SELECT department, SUM(salary) as total_salary
+FROM employees
+GROUP BY department
+ORDER BY total_salary DESC;
+
+
+If you want to display the sum of salaries for each department, you can use the SUM aggregate function along with the GROUP BY clause. 
+
+SELECT department, MAX(salary) as department_total_salary
+FROM employees
+GROUP BY department;
+
+
+----------------------------
+
+CREATE TABLE orders (
+    order_id INT PRIMARY KEY,
+    customer_id INT,
+    order_date DATE,
+    total_amount DECIMAL(10, 2)
+);
+
+INSERT INTO orders VALUES
+(1, 101, '2024-01-15', 120.50),
+(2, 102, '2024-01-16', 75.20),
+(3, 101, '2024-01-17', 200.00),
+(4, 103, '2024-01-18', 150.75),
+(5, 102, '2024-01-19', 90.30);
+
+
+CREATE TABLE order_items (
+    order_item_id INT PRIMARY KEY,
+    order_id INT,
+    product_name VARCHAR(50),
+    quantity INT,
+    unit_price DECIMAL(8, 2)
+);
+
+INSERT INTO order_items VALUES
+(1, 1, 'Product A', 2, 30.00),
+(2, 1, 'Product B', 1, 60.50),
+(3, 2, 'Product A', 1, 25.00),
+(4, 3, 'Product C', 3, 40.00),
+(5, 4, 'Product B', 2, 35.25),
+(6, 4, 'Product A', 1, 50.50),
+(7, 5, 'Product C', 1, 90.30);
+
+
+Sum of Order Amounts per Customer:
+
+SELECT customer_id, SUM(total_amount) as total_spent
+FROM orders
+GROUP BY customer_id
+ORDER BY total_spent DESC;
+
+
+Products with Total Quantity Sold:
+
+SELECT product_name, SUM(quantity) as total_sold
+FROM order_items
+GROUP BY product_name
+ORDER BY total_sold DESC;
+
+
+Orders with Total Amount exceeding $100:
+
+SELECT order_id, customer_id, SUM(total_amount) as order_total
+FROM orders
+GROUP BY order_id, customer_id
+HAVING order_total > 100
+ORDER BY order_total DESC;
+
+
+------------------------END OF GROUPBY---------------------------------------------

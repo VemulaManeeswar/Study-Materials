@@ -1,0 +1,106 @@
+CREATE TABLE Faculty_Info  
+(  
+F_ID INT NOT NULL PRIMARY KEY,    
+F_F_Name VARCHAR (190),    
+F_Last_Name VARCHAR (190),    
+F_Dept_Id INT NOT NULL,  
+F_Address Varchar(250),  
+F_City Varchar (180),  
+F_Salary INT   
+);  
+
+INSERT INTO Faculty_Info (F_ID, F_F_Name, F_Last_Name,F_Dept_Id, F_Address, F_City, F_Salary) VALUES (1001, 'Arush', 'Sharma', 4001,' Aman Vihar', 'Delhi', 20000);  
+INSERT INTO Faculty_Info (F_ID, F_F_Name, F_Last_Name,F_Dept_Id, F_Address, F_City, F_Salary)VALUES(1002, 'Bulbul', 'Roy', 4002, 'Nirman Vihar', 'Delhi', 38000 );  
+
+
+ASCII String Function
+This function in SQL returns the ASCII value of the character in the output. It gives the ASCII value of the left-most character of the string.
+
+SELECT F_City, ASCII(F_City) AS ASCII_code_of_column FROM Faculty_Info;  
+-----------------------------------------
+
+
+CHARACTER_LENGTH String Function
+
+This string function returns the length of the given string. It shows the number of all characters and spaces from the sentence
+
+The following SELECT query shows the total number of characters and spaces of the specified string:
+
+SELECT CHARACTER_LENGTH('Life is Beautiful');  
+SELECT F_Last_Name, CHARACTER_LENGTH(F_Last_Name) AS Length_of_Last_Namecolumn FROM Faculty_Info; 
+____________________________________
+
+CONCAT String Function
+This string function concatenates two strings or words and forms a new string in the result.
+
+SELECT F_First_Name, F_Last_Name, CONCAT(F_First_Name, ' ', F_Last_Name) AS Append_First_LastName FROM Faculty_Info;
+ 
+
+SELECT F_F_Name, F_Last_Name, CONCAT_WS('.', F_F_Name, F_Last_Name) AS Append_First_LastName FROM Faculty_Info;
+
+
+LCASE String Function
+This string function allows users to convert the specified string into lower case letters.
+
+query converts the upper case letters of the given string into the lower case letters.
+
+SELECT LCASE( 'The CAPITAL of INDIA is NEW DELHI');  
+
+
+FIND_IN_SET(string, commaSeparatedString)
+Returns the position (index) of a string within a comma-separated list. Returns 0 if not found.
+
+SELECT FIND_IN_SET('Delhi', 'Mumbai, Goa, Bangalore,Delhi, Kolkata, Chennai') AS Position_In_List;
+
+
+INSTR(string, substring)
+Returns the position of the first occurrence of a substring in a string.
+
+SELECT F_Address, INSTR(F_Address, 'm') AS INSTR_Address FROM Faculty_Info;
+
+
+LEFT(string, length)
+Returns a specified number of characters from the left side of a string.
+
+SELECT F_Address, LEFT(F_Address, 6) AS LEFT_Address FROM Faculty_Info;  
+
+
+
+LPAD(string, length, pad_string)
+Left-pads a string with another string to a specified length.
+
+SELECT F_City, LPAD(F_City, 10, '*') AS LPAD_City FROM Faculty_Info;  
+
+
+LTRIM(string)
+Removes leading spaces from a string.
+
+SELECT LTRIM('   Example String with Leading Spaces') AS TrimmedString;
+
+SELECT F_Last_Name, LTRIM(F_Last_Name) AS LTRIM_LastName FROM Faculty_Info;  
+
+
+
+REPEAT(string, count)
+Repeats a string a specified number of times.
+
+SELECT REPEAT( 'H ' , 5);  
+
+SELECT F_Address, REPEAT( F_Address, 2 ) AS REPEAT_Address FROM Faculty_Info;  
+
+REPLACE(string, old_substring, new_substring)
+Replaces all occurrences of a substring with another substring in a string.
+
+SELECT F_Address, REPLACE(F_Address, 'a', '') AS REPLACE_a_Address FROM Faculty_Info;
+
+
+REVERSE(string)
+Reverses the characters in a string.
+
+SELECT F_Address, REVERSE( F_Address ) AS REVERSE_Address FROM Faculty_Info;  
+
+
+MID
+
+SELECT MID(F_F_Name,2,3) as First Name from Faculty_Info;
+

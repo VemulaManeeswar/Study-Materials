@@ -1,0 +1,53 @@
+Aggregate functions are:
+used to implement calculation based upon a particular column.These functions always return a single value.
+
+Aggregate functions are:
+
+1. SUM()
+This function is used to find the total value of a particular column.
+ SELECT SUM (Fees) FROM STUDENT; 
+
+Calculate the Total Fees Paid by All Students:
+
+SELECT SUM(fees) AS TotalFeesPaid FROM student_data;
+
+
+2. AVG()
+This function is used to find the average value of a particular column
+
+SELECT AVG (Fees) FROM student_data;
+
+Calculate the Average Fees for Students:
+
+SELECT AVG(Fees) AS AverageFees
+FROM student_data;
+
+
+3. MAX()
+This function is used to find the maximum value of a particular column.
+
+SELECT MAX (Fees) FROM student_data; 
+
+Find the Maximum and Minimum Fees:
+
+SELECT MAX(Fees) AS MaxFees, MIN(Fees) AS MinFees
+FROM student_data;
+
+
+4. MIN()
+This function is used to find the minimum value of a particular column
+ SELECT MIN (Fees) FROM student_data; 
+
+5. COUNT() AND COUNT(*)
+COUNT()This function is used to find the number of values (i.e. number of rows) of 
+a particular column.
+
+select count(LastName) from student_data;
+
+The COUNT (*) function returns the total number of records in a table, 
+counts NULL values also 
+
+Count the Total Number of Students
+
+SELECT COUNT(*) AS TotalStudents
+FROM student_data;

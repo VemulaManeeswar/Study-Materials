@@ -1,0 +1,146 @@
+SELECT DISTINCT
+
+	The SELECT DISTINCT statement is used to return only distinct (different) values.
+
+SELECT DISTINCT Country FROM Customers;
+
+counts and returns the number of different (distinct) countries in the "Customers"
+
+SELECT COUNT(DISTINCT Country) FROM Customers;
+------------------------------------------------------------------------
+WHERE
+------------------------------------------------------------------------
+SELECT * FROM Products;
+
+SELECT * FROM Products
+WHERE Price > 30;
+
+SELECT * FROM Products
+WHERE Price BETWEEN 50 AND 60;
+_____________________________________________
+
+CREATE TABLE Customers_data(
+    CustomerID INT NOT NULL AUTO_INCREMENT,
+    CustomerName VARCHAR(255) NOT NULL,
+    ContactName VARCHAR(255),
+    Address VARCHAR(255),
+    City VARCHAR(255),
+    PostalCode VARCHAR(10),
+    Country VARCHAR(255),
+    PRIMARY KEY (CustomerID)
+);
+-------------------------------------------------
+INSERT INTO Customers_data (CustomerName, ContactName, Address, City, PostalCode, Country) VALUES
+('Alfreds', 'Maria Anders', 'Obere Str. 57', 'Berlin', '12209', 'Germany'),
+('Ana Trujillo Emparedados y helados', 'Ana Trujillo', 'Avda. de la Constitución 2222', 'México D.F.', '05021', 'Mexico'),
+('Antonio Moreno Taquería', 'Antonio Moreno', 'Mataderos 2312', 'México D.F.', '05023', 'Mexico'),
+('Around the Horn', 'Thomas Hardy', '120 Hanover Sq.', 'London', 'WA1 1DP', 'UK'),
+('Berglunds snabbköp', 'Christina Berglund', 'Berguvsvägen 8', 'Luleå', 'S-958 22', 'Sweden');
+
+
+
+WHERE clause can be combined with AND,OR,NOT
+The AND and OR operators are used to filter records based on more than one 
+condition:
+
+The AND operator displays a record if all the conditions separated 
+by AND are TRUE.
+
+SELECT * FROM Customers
+WHERE Country = 'Germany' AND City = 'Berlin';
+
+The OR operator displays a record if any of the conditions separated 
+by OR is TRUE
+
+SELECT * FROM Customers
+WHERE City = 'Berlin' OR City = 'Stuttgart';
+
+
+The NOT operator displays a record if the condition(s) is NOT TRUE.
+
+SELECT * FROM Customers
+WHERE NOT Country = 'Germany';
+
+SELECT * FROM Customers where name='Amit' AND (phone='NULL' 
+OR id=101);
+
+---DELETE-----
+
+DELETE FROM Customers WHERE CustomerName='Alfreds Futterkiste';
+
+DELETE FROM Customers;
+
+---BETWEEN---
+
+SELECT name
+FROM customers
+WHERE age BETWEEN 45 AND 55;
+
+---------------------------------------------------------------------------
+LIKE:LIKE searches for a specified pattern in a column.
+
+
+Wildcards:
+A wildcard character is used to substitute one or more characters in a string.
+
+Wildcard characters are used with the LIKE operator. The LIKE operator is used in a WHERE clause to search for a specified pattern in a column.
+
+%	Represents zero or more characters	bl%  finds   bl, black, blue, and blob
+_	Represents a single character		h_t   finds   hot, hat, and hit
+___________________________________________________________________________
+x% 	— will select all values that begin with x
+%x% 	— will select all values that include x
+%x 	— will select all values that end with x
+x%y 	— will select all values that begin with x and end with y
+ _x% 	— will select all values have x as the second character
+ x_% 	— will select all values that begin with x and are at least two characters long.
+You can add additional _ characters to extend the length requirement, i.e. x___%
+
+------------------------------------------------------------------------------
+
+selects all customers with a CustomerName starting with "a":
+
+SELECT * FROM Customers_data WHERE CustomerName LIKE 'a%';
+
+selects all customers with a CustomerName ending with "a":
+SELECT * FROM Customers_data WHERE CustomerName LIKE '%a';
+
+selects all customers with a CustomerName that have "or" in any position:
+
+SELECT * FROM Customers_data WHERE CustomerName LIKE '%or%';
+
+selects all customers with a CustomerName that have "r" in the second position
+
+SELECT * FROM Customers_data WHERE CustomerName LIKE '_r%';
+
+selects all customers with a CustomerName that starts with "a" and are at least 3 characters in length
+SELECT * FROM Customers_data WHERE CustomerName LIKE 'a__%';
+
+selects all customers with a ContactName that starts with "a" and ends with "o":
+SELECT * FROM Customers_data WHERE CustomerName LIKE 'a%o';
+
+selects all customers with a CustomerName that does NOT start with "a":
+SELECT * FROM Customers_data WHERE CustomerName NOT LIKE 'a%';
+
+selects all customers with a City starting with "ber"
+
+SELECT * FROM Customers_data
+WHERE City LIKE 'ber%';
+
+selects all customers with a City containing the pattern "es"
+SELECT * FROM Customers_data
+WHERE City LIKE '%es%';
+
+selects all customers with a City starting with any character, followed by "ondon"
+SELECT * FROM Customers_data
+WHERE City LIKE '_ondon%';
+
+selects all customers with a City starting with "B", followed by any character, followed by "B", followed by any character.
+
+SELECT * FROM Customer_data WHERE City LIKE 'B_B_';
+
+
+Select all records where the second letter of the City is an "a"
+
+SELECT * FROM Customers
+WHERE City LIKE '_a%';

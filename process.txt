@@ -1,0 +1,28 @@
+xampp install
+xampp software run(apache,mysql)
+open edge or chrome type url
+
+http://localhost  press enter key
+screen appears
+---
+create a folder with name dec2023 under htdocs
+
+write sql queries in notepad and save it with edm.sql
+
+use chatgpt help 
+
+paste sql code 
+based on above sql code, give me php code with html form elements using localhost as host and database as edm and password as Admin@123 and user as root
+
+copy code from chatgpt and save it with employee.php under htdocs-->dec2023
+
+open edge---->type  http://localhost/dec2023/employee.php
+
+------------------------------------------------------
+open sql---
+
+to open sql use phpymyadmin
+
+http://localhost/phpmyadmin/
+
+create database and tables using sql menu- gui

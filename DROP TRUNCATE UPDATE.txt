@@ -1,0 +1,172 @@
+Basic DROP TABLE:
+	DROP TABLE Customers;
+Conditional DROP TABLE:
+	DROP TABLE IF EXISTS Orders;
+DROP Multiple Tables:
+	DROP TABLE Employees, Departments;
+
+____________________________________________________________________________________
+Basic TRUNCATE TABLE:
+	•Task: Remove all data from the "Orders" table.
+TRUNCATE TABLE Orders;
+-------------------------------------------
+TRUNCATE Multiple Tables:
+	•Task: Remove all data from both the "Employees" and "Departments" tables in a single query.
+TRUNCATE TABLE Employees, Departments;
+
+
+CREATE TABLE Student (
+    StudentID INT PRIMARY KEY,
+    FirstName VARCHAR(50),
+    LastName VARCHAR(50),
+    DateOfBirth DATE,
+    Gender VARCHAR(10),
+    Major VARCHAR(50)
+);
+
+-- Add a 'Fees' column to the Student table
+ALTER TABLE Student
+ADD Fees DECIMAL(10, 2);
+
+
+-- Insert data into the Student table, including the Fees column
+INSERT INTO Student (StudentID, FirstName, LastName, DateOfBirth, Gender, Major, Fees)
+VALUES
+      (2, 'Mary', 'Johnson', '2001-02-28', 'Female', 'Engineering', 2700.50),
+    (3, 'David', 'Lee', '1999-11-10', 'Male', 'Biology', 2300.75),
+    (4, 'Sarah', 'Williams', '2000-08-03', 'Female', 'Psychology', 2200.00),
+    (5, 'Michael', 'Brown', '2002-03-20', 'Male', 'Mathematics', 2600.25);
+
+
+insert into student values(101,"Arun","Kareen","1990-04-10","male","computer science");
+
+INSERT INTO Student (StudentID, FirstName, Gender,  Fees)
+VALUES (1, 'John',  'Male', 2500.00);
+
+
+--To add new column
+ALTER TABLE student ADD email varchar(100);
+
+
+--To add multiple column
+
+ALTER TABLE student ADD (fname varchar(55),address varchar(100));
+
+
+--To rename a column
+
+ALTER TABLE student RENAME COLUMN Major TO Groups;
+
+
+--To modify datatype length 
+ALTER TABLE student MODIFY FirstName varchar(55);
+
+
+--To drop column
+ALTER TABLE student DROP COLUMN fname;
+
+
+--To change table name
+ALTER TABLE student RENAME TO student_data;
+
+
+--To add column with default value
+
+ALTER TABLE student_data
+ADD COLUMN doj DATE DEFAULT '2000-10-10';
+
+---------------------------------------UPDATE------------------------------------------------
+Update Fees for a specific student:
+
+UPDATE Student
+SET Fees = 2800.00
+WHERE StudentID = 2;
+
+
+Update FirstName and Gender for a specific StudentID:
+UPDATE Student
+SET FirstName = 'Robert', Gender = 'Male'
+WHERE StudentID = 101;
+
+
+
+Set a default value for the newly added 'doj' column for a specific student:
+UPDATE Student_data
+SET doj = '2023-10-10'
+WHERE StudentID = 1;
+
+
+Update the email for a student with a specific FirstName:
+
+UPDATE Student
+SET email_id = 'john.smith@example.com'
+WHERE FirstName = 'John';
+
+
+Update multiple columns for a specific student:
+UPDATE Student
+SET FirstName = 'Alice', email_id = 'alice@example.com', doj = '2023-11-15'
+WHERE StudentID = 5;
+
+
+Modify the datatype length of FirstName:
+ALTER TABLE Student MODIFY FirstName varchar(100);
+
+
+--To update single value
+
+UPDATE Customers
+SET ContactName='Juan'
+WHERE Country='Mexico';
+
+--UPDATE Multiple Records
+
+UPDATE Customers
+SET ContactName = 'Alfred Schmidt', City= 'Frankfurt'
+WHERE CustomerID = 1;
+
+--Update All Rows in a Table:
+
+UPDATE Orders
+SET Status = 'Shipped';
+
+-- Increase the 'Fees' for all students by 500
+
+UPDATE Student_data
+SET Fees = Fees + 500 where StudentID=1;
+
+--Updating a Single Column
+
+UPDATE STUDENT  SET SNAME = ‘Sara’  WHERE SAdmno = 1501;
+
+--Update multiple column
+
+UPDATE STUDENT  SET SFees = 10500, Sec = ‘D’ where SAdmno =1605;
+
+--Update Using Arithmetic Operations:
+
+UPDATE Inventory
+SET QuantityInStock = QuantityInStock - 10
+WHERE ProductID = 7;
+
+
+-- Increase the 'Fees' for all students by 500
+UPDATE Student_data
+SET Fees = Fees + 500;
+
+
+CREATE TABLE staff_data AS select * from student_data where 1=0;
+
+desc student_data;
+
+create table emp AS select FirstName,Gender,address from student_data where 1=0;
+
+desc emp;
+
+select * from student_data;
+
+create table emp1 AS select FirstName,Gender,address from student_data;
+
+select * from student_data;
+
+select * from emp1;
