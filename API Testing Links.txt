@@ -1,0 +1,17 @@
+https://jsonformatter.curiousconcept.com/ ------> JSON Online Formatter.
+http://hapi.fhir.org/ --------> FHIR 
+https://www.hl7.org/fhir/stu3/index.html ----> FHIR
+http://dxcappche897/MedChartFhirAPI/api/sandbox/index# -----> API Testing END Points in MC
+
+*************************************************************
+https://www.youtube.com/watch?v=s7wmiS2mSXY -----> What is an API
+https://www.youtube.com/watch?v=t5n07Ybz7yI&t=504s ------->The Basics of Using Postman for API Testing
+
+Some interesting blogs :
+https://www.clariontech.com/blog/why-api-testing-is-required
+https://www.edureka.co/blog/what-is-api-testing#APITesting
+
+ 
+
+FHIR :
+https://www.youtube.com/watch?v=oSI6g3uy3mY
