@@ -1,0 +1,16 @@
+-> Steps to create Python project in pycharm(automatic):
+----------------------------------------------------------------------------
+
+1) Open pycharm Proffesional
+2) Select create new project
+3) from left panel select django.
+4) from Right Location of the Project
+	eg:- e:\django examples\project1
+5) In project Interpreter python 3.6
+6) select Existing interpreter
+7) In More Settings
+8) Template Language :Django
+    Template Folder : templates
+    Application Name : app1
+	django admin(uncheck)
+9) click on create

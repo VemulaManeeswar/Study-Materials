@@ -1,0 +1,24 @@
+                                     PYTHON
+                                     ------------
+
+- >Python (IDLE) :-
+    ------------------
+    IDLE stands for Integrated Development Language Environment.
+ 
+->How to Download Python IDLE ?
+    (i) Open Google in URL  type "www.python.org".
+    (ii) In that site Go to Downloads-> Windows ->Python 3.6.4 - 2017-12-19 ->
+    (iii) for  64 bit "Download Windows x86-64 executable installer"
+    (iv) for 32 bit  "Download Windows x86 executable installer"
+    (v) Download the file according to your os . if your using 32 bit means install 32bit .if your using 64bit means          install 64bit.
+    (vi) Now install the Software Python .
+
+--------------------------------------------------------------------------------------------------------------------
+
+->How to Downlod Python IDE(pycharm)?
+    (i) Open Google and type "Pycharm Download".And Hit Enter
+    (ii) Open First link "https://www.jetbrains.com/pycharm/download/" .This is the official site to download          pycharm.
+    (iii) In that site download Community version.
+-----------------------------------------------------------------------------------------------------------------
+
+

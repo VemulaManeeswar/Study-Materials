@@ -1,0 +1,29 @@
+-> Steps to Create Web Application:-
+-------------------------------------------------
+
+1) Create a Project
+2) Create a App in Project
+3) Open create Project in pycharm.
+4) In App Open "view.py" and w	rite the below code.
+	 
+	from django.http import HttpResponse
+	
+	def showHomePage(request):
+		return HttpResponse("Hello World I am the Home Page")
+
+5) Link the "view.py" function in "urls.py" file.
+6) like
+	Note:  "urls.py" file is in Project
+	
+	from django.contrib import admin
+	from django.urls import path
+	from app1 import views
+
+	url patterns = [ 
+		path('admin/', admin.site.urls),
+		path('home', views.showHomePage),
+		]
+
+7) Start the Server
+8) Open a WebBrowser and type URL as
+	http://127.0.0.1:8000/home
