@@ -1,0 +1,27 @@
+->Steps to Create Project in Django:-
+-------------------------------------------------
+
+1) Open Command Prompt
+2) Move to the Project's Folder in Command Prompt
+	eg:- e:\django examples>
+3) Type the command as
+	django-admin startproject Project_name
+
+-> Steps to Create app in Django Project:-
+--------------------------------------------------------
+
+1) In Command Prompt Move to Created Project Folder
+	eg: -  e:\django examples\project1>
+2) Type the command as
+	django-admin startapp app_name
+
+-> Steps to start Django Server:-
+-------------------------------------------
+
+1) Open Command Prompt
+2) Move to Project Folder in Command Prompt
+3) Type Command as
+	eg:- e:\django examples\project1\python manage.py runserver
+
+
+
