@@ -1,0 +1,40 @@
+Brackets:-
+------------
+
+->Brackets is an IDE .
+->If you know brackets very well then dream viewr is very easy for you.
+->All custom css should be in css folder.
+->All custom js should be in js folder.
+
+Extensions (or)plugins in brackets:-
+--------------------------------
+1)auto save -> It saves every keystroke which you entered in brackets.
+2)Beautify->For alignment and also for maintaining tab spaces.
+3)HTML Skeleton->For getting HTML Structure.
+4)Bootstrap Starter Template -> For getting Bootstrap Structure.
+5)Brackets Tree Icons ->It will shows the icons for every folders in the tree structure format.
+6)Brackets Color Picker ->
+7) Auto Prefixer ->It is used for Multi browser properties.
+8)Emmet->Emmet is used to simplify our work.Like formulas.
+E.g:- ul>li*5
+	<ul>
+  	  <li></li>
+  	  <li></li>
+   	 <li></li>
+  	  <li></li>
+  	  <li></li>
+	</ul>
+Emmet cheat sheet:-
+-----------------------
+https://docs.emmet.io/cheat-sheet/
+----------------------
+overapi.com
+codingheros.io/resources
+
+------------------------------------------------------------------------------------
+		Procedure to Download Brackets
+--------------------------------------------------------------------------------------
+Step 1:- Go to www.brackets.io and click on Download 1.11 version.
+Step 2:- Install that brackets in your system.
+Step 3:- After that go to Extension manager and download all the required plugins.
+-------------------------------------------------------------------------------------

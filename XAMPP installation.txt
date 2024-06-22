@@ -1,0 +1,46 @@
+XAMPP Installation:-
+-------------------------
+-> Step 1:- Go to this site https://www.apachefriends.org/index.html
+->Step 2:- Xampp for windows (7.2.4(php 7.2.4))
+->Step 3:-After installing open XAMPP Control Pannel
+->Step 4:-Now select language as US and click on save button
+->Step 5:-Now select Apache and Mysql and click on start
+->Step 6:-A pop-up menu will open click on Allow Access
+->Step 7:- Go to chrome and type "localhost" in URL
+->Step 8:-Now copy the wordpress setup file and paste it in file location(installed in c:/).
+->Step 9:-In that htdocs>wordpress. paste it in the htdocs.
+->Step 10:-Now rename that wordpress folder name to your required site name.
+--------------------------------------------------------------------------------------------------
+
+WORDPRESS Installation:-
+---------------------------------
+->Step 1:-To install wordpress.Go to chrome and click on url and type localhost
+->Step 2:-Now Xampp site will open in that click on PhpMyAdmin
+->Step 3:-Now click on databases
+->Step 4:- Give the name to the databases with your required site name
+->Step 5:-Now select collation from dropdown
+->Step 6:-Now click on Create
+->Step 7:-Now close the Xampp site
+->Step 8:-Open chrome and type url>localhost/yourrequiredsitename
+->Step 9:- Now click on let's go option
+->Step 10:-Now enter database details
+->Step 11:-database-our site name(database name)
+	username-root(default)
+	password-empty
+	database Host-localhost
+	table prefix- wp_(default).you can give custom name
+->Step 12:-Now click on submit 
+->Step 13:-Now run the installation(After clicking this wordpress will start installation)
+->Step 14:-site title-Maneeswar site
+	username-Maneeswar_vemula
+	password-11031-------51
+	your email-maneeswar.vemula@gmail.com
+->Step 15:-Now click on install wordpress.
+->Step 16:-It will show success,username and password
+->Step 17:-Now click on login
+->Step 18:-Now enter your email(or) username and password and click login
+->Step 19:- Now your dashboard will open
+->Step 20:-click on Maneeswar site.
+->Step 21:- If you want to change theme.Go to Appearences->themes and apply required theme
+->Step 22:- If you want to exit click on logout.
+--------------------------------------------------------------------------------------------------------------------------

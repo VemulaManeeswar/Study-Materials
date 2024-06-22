@@ -1,0 +1,59 @@
+universal selector:-
+---------------------
+
+*,
+*::after,
+*::before{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+html5 shorthand method:-
+------------------------------
+background:#000 url(images/logo.jpg) no-repeat;
+
+->only border right want to apply in navbar section at that moment we want to use this property:-
+---------------------------------------------------------------------------------------------------------------------
+.nav ul li:not(:last-child)
+{
+border-right:2px solid green;
+}
+
+
+display:flex;
+it must be given for parent.
+it will take based on the height of the div.if the  div which is big that remaining all will take as that height.
+-------------------------------------------------------------------------------
+
+content always exclude padding.it will take padding along with the background color.
+-------------------------------------------------------------------------------
+
+
+
+
+
+
+-------------------
+object-fit:cover;
+display:static;
+display:table-cell;
+display:table;
+font-size:xx-large;
+----------------------
+
+Matrix method:-
+------------------
+
+transform:matrix(scale,skew,translate)
+transform	:matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY());
+transform	matrix(1,-0.3,.1,1,4,11);
+--------------------------------------------------------------
+
+
+-----------------------------------------------------------
+
+link - 
+visited- once it visited it will show already visited.
+active
+hover

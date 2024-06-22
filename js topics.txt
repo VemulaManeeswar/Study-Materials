@@ -1,0 +1,75 @@
+js Topics:-
+-----------
+ 
+1) Script Source
+2) Variables
+3) Data Types
+4) Operators
+	arthmetic 
+	comparition
+	asignment
+	logical and bitwise
+5) Conditional Statements
+	if
+	if else
+	nested if
+
+6) Switch Case
+7) loops
+	1)while loop
+	2)do while
+	3)for loop 
+	4)for in
+8) Global functions
+		1)isNaN
+		2) is finite
+		3) eval
+		4)decode URL
+		5) encode URL
+	
+9) Functions
+	 1) iife(immediately invoked function expression)
+	 2) anonomous
+	 3) named function
+	4) function with and without parameter
+	5) function with return value
+	6) function with call backs
+	7) function returns function
+10) Events
+	1)Mouse events
+	2)form events
+	3) browser events
+	4)keyboard events
+
+
+Chapeter-2
+--------------
+
+11) objects
+ 	1)Built-in-objects
+		1)Array
+		2)DOM
+		3)Date
+		4)Math
+		5)String
+		6)Number
+		7)Boolean
+		8)RegEx
+	2) Custom Objects
+		1)Construtor function
+		2)inherit object with prototype
+		3)Extending Object Constructors	
+12) cookies
+13) clousres
+14) error handling
+chapter-3
+----------
+
+15) ajax
+16)xml
+17)json and jsonp
+
+chapter-4
+------------
+execute the project	
+

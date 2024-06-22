@@ -1,0 +1,23 @@
+differences:-
+-----------------
+1) bgcolor - background-color
+2) .html - .htm
+3) button - submit
+4) color - background-color
+display:none; - it means it doesnt contain any data.
+visibility:hidden; - it means it contains data but it wont show.
+
+
+tags which doesnt have closing (or) un-paired tags:-
+-------------------------------------------------------------
+<!DOCTYPE html>
+<br>
+<img>
+<link>
+<hr>
+<input>
+
+Empty tags in html:-
+-----------------------
+<br>
+<hr>

@@ -1,0 +1,328 @@
+CSS Properties:-
+----------------
+************************
+* 1) Back ground     *
+* 2) Padding         *
+* 3) Margin          *
+* 4) Font            *
+* 5) Text            *
+* 6) Opacity         *
+************************
+
+1)Background:-
+--------------
+
+1)Background-color:-  To apply a background(bg) color for div.
+     -------------------
+				Eg:- background-color:#000;#111;pink;red..etc
+
+2)Background-image:-  To apply a background(bg) image for a div.
+-------------------------		 Eg:- background-image:url(logo.jpeg);
+		      To apply background image to the total website we have to write in the body.
+			eg:-   body{
+				background-image:url(abc.jpg);
+				background-size:cover;
+				background-size:100% auto;
+				background-attachemt:fixed;
+				}
+		     
+
+3)Background-repeat:- By default it will repeat.but we will make it to no-repeat.
+-------------------   
+				Eg:- background-repeat:no-repeat;
+						      :repeat-x;
+						      :repeat-y;
+						      :repeat-xy;
+
+4)Background-size:- If the div size is big and the image size is small
+-----------------------        .To fit that image in the div we use this property.				      							Eg:- background-size:cover;(it won't stretch).
+				                (or)
+				  background-size:900px 500px;
+						   |      |
+						x-axis   y-axis
+
+	5)Background-position:- To change the position of the image and set it
+	----------------------------    in to different places.
+				 Eg:- background-position:top left;
+							 :top center;
+							 :top right;
+							 :center left;
+							 :center center;
+							 :center right;
+							 :bottom left;
+							 :bottom center;
+							 :bottom right;
+                                                   	  (or)
+					background-position:200px 20px;
+							      |    |
+						/	   x-axis y-axis 
+					               /
+					             \/
+					   To set the image in the differnt 						                                                                            positions not in the 9-blocks.
+
+	6)Background:url:- To call more than one images same time we use this.
+	-----------------------  Eg:-background:url(1.png) no-repeat 10px 30px,
+			url(2.png) no-repeat 440px 30px;
+
+	7)Background-attachment:- To fix the bg image fixed but not the 
+      	  -----------------------------     content. Then we use this.If we use the 					 			 	          bg-attachment definitely we must use the 	
+			           bg-position.
+			          Eg:- background-attachmen:fixed;
+				 background-position:top center;
+	8) background:-
+	     -------------         To apply gradient to the box we use background property.
+			eg:- background: -moz-radial-gradient(center,#000,#efefef);
+			        background: -webkit-radial-gradient(center,#000,#efefef);
+		    
+	-moz- means mozilla firefox
+	-webkit means chrome
+	gradient means mixed colors.
+	property:-
+	-----------
+	radial-center
+	linear-from one side
+
+	background:-
+	---------------
+			eg:- background:rgba(51,51,51,0.5);
+					  \    \   \     \
+					red,green,blue,alpha
+******************************************************************************
+2)PADDING:-
+----------
+	(*)To move the content we use padding.either image or text or div.
+	(*)By default padding will apply on four sides.
+	(*)we can also specify for specific position.
+	(*)for creating inner space we use padding.
+
+	Eg:- padding:100px;
+		      |
+		  four sides.
+		(or)
+	    padding:100px 20px 20px 100px;
+		     |            |         |       |
+		    top   right    bottom  left
+
+	(or)
+	Eg:- padding-left:100px;
+
+(*)padding wont create transperent area(that means empty space).
+**************************************************************************
+3)MARGIN:-
+--------------
+	    margin is to align(or) move a text, image, div etc..
+	margin and padding both are same but margin will show transparent but padding dont.
+	
+	
+************************************************************************
+4)TEXT:-
+---------
+(*)Text is used to write in tags like heading tags and paragraph.
+(*) If you want to move text to other direction use these attributes.
+	Eg:- text-align:center;
+		      :right;
+		      :justify(To keep the text line by line exactly).
+
+	1)text-decoration:-
+	--------------------
+			To underline the text we use text decoration.
+			Eg:- text-decoration:underline;
+				               :overline;
+				               :baseline;
+				               :line-through;
+	2)text-indent:-
+	-----------------
+			To move the first line one tab.
+			Eg:-text-indent:50px;
+	3)text-transform:-
+	----------------------
+			To transform the total text.
+			Eg:- text-transform:uppercase;
+			        	             :lowercase;
+				             :capitalize;
+	4)direction:-
+	-------------
+ 			To change the direction of text.
+			Eg:-direction:rtl;(right to left);
+			                     :ltr;(left to right);
+	5) text-shadow:-
+	  -----------------
+			To give a shadow for the text.we use this property.
+			Eg:- text-shadow:2px 2px 2px #000;
+
+
+
+	column-count:-
+	----------------    To divide the paragraph into multiple columns.
+		         eg:-column-count:3;
+	letter-spacing:-
+	-----------------
+		      To give spacing for letter to letter.
+		      eg:- letter-spacing:3px;
+	word-spacing:-
+	----------------
+		    To give spacing for word to word.
+		     eg:-word-spacing:3px;
+	text-overflow:-
+	-----------------
+		      To give border for the text.
+		      eg:- border 1px solid #000;
+		              text-overflow:clip;
+				  :ellipsis;
+**************************************************************************
+5) FONT:-
+-----------
+	To change the font into different styles.
+	eg:- font-family:verdana;
+	       font-size:20px;
+	       font-weight:bold;
+		         :italic;
+		         :lighter;
+	1) font-variant:-
+	   ----------------
+		To change the total text into differnent style.
+		eg:-font-variant:small-caps;
+			        :normal;
+	2) font-em:-
+	   -----------
+		1em=16px;
+		eg:- font-size:1.875em;
+		
+			30px/16=?
+
+*********************************************************************************
+6) OPACITY:-
+   -------------
+	         To reduce or increase the visibility of the image,div,text etc............
+		eg:- opacity:0.6; ->60%;
+		        opacity:1; ->100%;
+	
+
+	2) border-radius:-
+	   -------------------
+			eg:- border-radius:100;	->total image will be rounded.
+			        border-radius:50px 0px 50px 0px;
+				
+
+	3) border:-
+	    ---------
+		To set the shape color and border.
+		eg:- border:5px dashed #fff;
+			     \        \          \
+			     value,shape,color;
+
+			solid,dotted,double,groove,dashed.
+
+	4) border-top:-
+	    -------------
+		     eg:- border-top:5px double #fff;
+		            border-bottom:5px dotted #fff;
+
+	5) box-shadow:-
+	  -----------------	
+		       To apply shadow to the image.
+		
+		eg:-  box-shadow:10px 10px 5px #000;
+				\       \      \        \
+			              x-axis,y-axis,blur value(or)alpha,color;
+
+		eg:- box-shadow: -10px -10px 5px #000;
+				\          \       \
+			             x-axis,y-axis,blur value(or)alpha,color;
+
+-10px means invert.If we use minus(-).(or) To invert the box shadow by applying minus(-) value.
+
+*********************************************************************************************
+
+
+************************************************************************************************
+LIST PROPERTIES:-
+-------------------------
+
+	list-style:-
+	----------
+		To remove the bullets,squares,disc
+		eg:- list-style:none;
+
+	list-style-image:-
+	-----------------
+		           To call an image in the place of bullets we use this.
+		           eg:-  list-style-image:url(star.png);
+
+************************************************************************************************
+->DISPLAY:-
+   -------------
+	To convert block element into inline elements.display wont take top and bottom. It will only take right and left. 
+	It wont take height and width. when we give margin.
+	
+	eg:- display:inline;
+	       display:inline-block;
+	       	           \
+		it will takes height and width.
+	2) dispaly:block:-
+	     ---------------
+		         to convert inline element to block element we use this property.
+			eg:- display:block;
+***************************************************************************************************
+->PLACE HOLDER:-
+    --------------
+	         It used in form attributes.In text box.for example search word in search box and enter your name in email.
+	         when ever we place cursor in text box where place holder located it will disappear.
+		eg:-  placeholder="enter user name"
+*************************************************************************************************
+-> PSEDO SELECTOR:-
+      ------------------------
+		     To apply any color,padding etc........... In a div we use this.This is also called as a nth concept.
+		     It will starts counting from first element.
+			eg:- .list3 ul li:last-child{
+			        color:green;
+			        }
+			       eg 2:- .list3 ul li:nth-child(5){
+				color:blue;
+				padding-left:100px;
+				}
+			      eg 3:- .list3 h5:nth-child(4){
+				color:maroon;
+				font-size:30px;
+				}
+			
+			eg 1:- <ul> 
+				<li></li>
+				<li></li>
+			          </ul>
+			         <h3></h3>
+			         <h4></h4>
+			          <h4></h4>
+			          <h4></h4>
+			
+*******************************************************************************
+->before and after:-
+  --------------------
+		.list2 ul li:before{
+			content:"(100);"
+			padding-left:50px;
+			}
+
+
+		.list ul li:after{
+			content:"*";
+			}
+
+
+****************************************************************************
+->UNIVERSAL SELECTOR:-
+    -------------------------------
+			*,
+			*::after,
+			*::before{
+				margin:0;
+				padding:0;
+				}
+-----------------------------------------------------------------------------------------------------------
+
+
+
+
+	
+
+

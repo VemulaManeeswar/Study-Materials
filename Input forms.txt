@@ -1,0 +1,43 @@
+HTML Input Types:-
+----------------------
+Syntax:-
+----------
+<input type="text"> defines a one-line text input field.
+
+1) text
+2) password
+3) submit
+4)reset
+5) radio
+6) checkbox
+7) button
+8) range
+9) search
+10) tel
+11) time
+13) color
+14) date
+15) datetime-local
+16) email
+17) month
+18) number
+19) url
+20) weak
+
+1)  text:-
+	used to enter text 
+2) password:-
+	used ot enter password
+3) submit:-
+	used to submit the data form
+4) reset:-
+	reset the all the data in the input fields.
+5) radio:-
+	it is used for selecting the options.In this we can select only one text at a time.
+	by default we want radio button as checked we have we have to write checked where we want as checked.
+	
+6) checkbox:-
+ 	it is also used for selecting the options. In this we can select more number of texts.
+	by default we want check box as checked we have we have to write checked where we want as checked.
+7) button:-
+	used to submit the data.

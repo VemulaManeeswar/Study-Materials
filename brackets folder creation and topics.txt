@@ -1,0 +1,70 @@
+brackets folders creation:-
+----------------------------
+->While creating any folder dont use spaces in between name.just use underscore(_) or hypen(-).
+
+->Step1:-Create new folder and rename with your requird name.
+Step2:- In that create three folders with name (custom)css,js, and vendors.
+Step3:-Create one file in the name of style.css and put that file in the custom css.
+Step4:- In vendors create two folders with name  css ,js.
+Step5:-In vendors folder  put css bootstrap.min  in css folder.
+Step6:- In vendors folder  put js bootstrap.min  in js folder.
+Step7:-Create one folder for images.That should be outside.
+Step8:-index.html file should be outside.
+-----------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------
+->Go to google fonts and then type "montserrat" and then customise 
+
+thin 100
+extra-light-200
+light 300
+regular 400
+medium 500
+semi-bold 600
+bold 700
+
+Eg:-font-family: 'Montserrat', sans-serif;
+
+--------------------------------------------------------------------------------------------------
+->go to color hunt and take one color and name it as you like and put variables infront of classes. --bgcolor,--firstcolor,--secondcolor,--thirdcolor.
+
+rem stands for "root element"
+->h1 is an element
+r is an px .it is html
+eg:- h1{
+20px;
+}
+
+--------------------------------------------------------------------------------------------------
+->In html every element by default 16px .
+->By percentage 16px is 100%.
+->for 10px= 10*100/16= 62.5%;
+->rem stands for root element
+10px=1rem
+25px=2.5rem
+250px=25rem
+1px= .1rem
+2px= .2rem
+--------------------------------------------------------------------------------------------
+
+box sizing:boreder-box;
+
+padding+border+width+height;
+
+total width:leftpadding+right padding+ right border
+total height:top padding+bottom padding+top border+bottom border
+----------------------------------------------------------------------------------------
+->By default every element will create 8px margin top and bottom
+
+
+
+	
+
+
+
+
+
+
+
+

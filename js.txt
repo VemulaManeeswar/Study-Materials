@@ -1,0 +1,589 @@
+js(java script):-
+-----------------
+
+->js was invented by "Bredan Eich".
+->it is invented in 1995.
+->everythinng should be kept in <script>.........</script>
+->js must be starts with script tag.
+->To display the content(or)data in the browser we use 
+	document.write()
+->To display the content in the alert we use
+	alert()
+->To collects the input from the user
+	prompt("Enter your name")
+->To display the output in the console mode
+	console.log()
+to see the console in browser short cut is f12
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+conditions:-
+--------------
+if:-
+---
+
+if(condition){
+	statement
+	    or
+	statemetns
+}
+else{
+statement or statements
+}
+---------------------------------------
+var marks= Number(prompt ("Enter the value of marks: "));
+if(marks>=35){
+	alert("congrates you passed");
+}
+else{
+	alert("sorry your failed in the exam");
+}
+----------------------------------------------------------
+if-elseif-else:-
+---------------
+if(condition){
+	statement
+	    or
+	statemetns
+}
+
+else if (condition){
+	statement
+}
+else if(condition){
+	statement
+}
+else {
+	statement
+}
+
+
+var marks = Number(prompt("Enter the value of marks: "));
+        if(marks>=75){
+            alert("congrats you passed in distinction");
+        }
+        else if(marks >= 60){
+            alert("congrats you passed in first class");
+        }
+          else if(marks >= 50){
+            alert("congrats you passed in second class");
+        }
+           else if(marks >= 35){
+            alert("congrats you passed in ordinary");
+        }
+        else{
+            alert("sorry your failed try next time");1
+        }
+-----------------------------
+if-elseif-logical:-
+-----------------
+if(condition){
+                  statement
+        	        or
+       	 statements
+              }
+        
+        	 else if(condition){
+        	 statment
+             }
+           
+      	 else if(condition){
+        	   statmeent
+            }
+             else{
+                statement
+            }
+
+var marks = Number(prompt("Enter the value of marks: "));
+              if((marks >= 35)&&(marks < 50)){
+            alert("congrats you passed in ordinary");
+        }
+        
+          else if((marks >= 50)&&(marks < 60)){
+            alert("congrats you passed in second class");
+        }
+        
+         else if((marks >= 60)&&(marks < 75)){
+            alert("congrats you passed in first class");
+        }
+        
+        else if((marks>=75)&&(marks <=100)){
+            alert("congrats you passed in distinction");
+        }
+        
+        else if(marks>100){
+            alert("Sorry entered marks wrong, it should not more then 100");
+        }
+       
+      
+        else{
+            alert("sorry your failed try next time")
+        }
+--------------------------------------
+
+nested-if:-
+----------
+var m1=Number(prompt("enter marks1"));
+var m2=Number(prompt("enter marks2"));
+var m3=Numer(prompt("enter marks3"));
+var m4=Number(prompt("enter marks4"));
+var avg=((m1+m2+m3+m4)/400)*100;
+if(m1>=35 &&m2>=35 && m3>=35 && m4>=35){
+if(avg>=75){
+	alert("you passed in distinction");
+}else if(avg>=60){
+	alert("you passed in firstclass");
+}else if(avg>=50){
+	alert("you passed in secondclass");
+}else if(avg>=45){
+	alert("you passed in ordinary");
+}else {
+	alert("you failed");
+}
+
+
+if(condition)
+{
+	if(condition)
+	{
+	statement;
+	else if(condition)
+	{
+	statement
+	}
+	else if(condition)
+	{
+	statement{
+	else
+	{
+	statement
+	}
+	
+
+switch case:-
+-------------
+syntax:
+	switch(expression){
+	case exp:{statement};
+	break;
+	case exp:{statement};
+	break;
+	default{statement};
+	}
+
+var ivr =Number(prompt("enter your language: "));
+
+switch(ivr){
+	case 1:{alert("you choosed telugu language")}
+	break;
+	case 2:{alert("you choosed english language")}
+	break;
+	case 3:{alert("you choosed Hindi language")}
+	break;
+	default:{alert(your input is wrong, go to main menu")}
+}
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Loops:-
+---------
+1)while 
+2)for
+
+1)while syntax:-
+------------------
+
+while(condition){
+statement;
+logic
+}
+
+
+example program:-
+---------------------
+
+var input= Number(prompt("Enter the value"));
+while(input <=20){
+document.write(input + "<br>");
+input++;
+}
+document.write("loop completed");
+
+do-while:-
+-----------
+do{
+statement
+logic
+}
+while(condition)
+
+example program:-
+---------------------
+var input =Number(prompt("enter the value:"));
+do{
+	document.write(input+"<br>");
+	input++;
+}
+while(input<=20)
+document.write("loop completed");
+
+for loop:-
+---------
+for(initialization;condition;itteration){
+statement;
+}
+
+example program:-
+--------------------
+for (var i=1;i<=10;i++)
+{
+	document.write(i +"<br>")
+}
+
+conditional base for :-
+----------------------------
+var i =Number(prompt("enter value for i:"));
+if(i<=20)
+{
+for(var i=11;i<=20;i++){
+	document.write("my name is arrow"+ "<br>")
+}
+}
+else{
+document.write("your enter value is: <b>"+ i + "</b> it is greater than 20);
+}
+-----------------------------------------------
+for in loop:-
+------
+syntax:-
+----------
+for ( x in obj){
+	statement;
+}
+
+example program:-
+--------------------
+for (i in student1){
+	document.write(data in  index no:" + i + "is:" + durga[i] + "<br>");
+}
+--------------------------------------------------------------------------------------------------
+
+
+-----------------
+var status = true;
+var count =0;
+ while (status != 
+
+
+
+-----------------------------------------
+->Nested for loop to print star patterns:-
+-----------------------------------------------
+example program:-
+----------------------
+for(var i=1;i<=5;i++){
+	for(var j=1;j<=i;j++){
+	document.write("*");
+}
+document.write("<br>")
+}
+-----------------------
+expected output:-
+---------------------
+*
+**
+***
+****
+*****
+-----------------------------------------
+
+Nested for loops to print star patterns:-
+---------------------------------------------
+example program:-
+--------------------
+for (var i=1;i <= 5;i++){
+     for(var j=1; j <= i; j++){
+	document.write("*");
+}
+	document.write("<br>");
+}
+for (i;i >= 1; i--){
+	for(var j=1;j <= 1; j++){
+document.write("*");
+}
+document.write("<br>");
+}
+---------------------
+expected output:-
+---------------------
+*
+**
+***
+****
+*****
+****
+***
+**
+*
+------------------
+
+Table:-
+----------
+example program:-
+---------------------
+var n=Number(prompt("enter any value"));
+        for(var i = 1; i <= 20; i++)
+            {
+                var k = n * i;
+                document.write(n +" * " +i +" = " + k +"<br>");
+                
+            }
+--------------------
+expected output:-
+------------------
+3 * 1 = 3
+3 * 2 = 6
+3 * 3 = 9
+3 * 4 = 12
+3 * 5 = 15
+3 * 6 = 18
+3 * 7 = 21
+3 * 8 = 24
+3 * 9 = 27
+3 * 10 = 30
+3 * 11 = 33
+3 * 12 = 36
+3 * 13 = 39
+3 * 14 = 42
+3 * 15 = 45
+3 * 16 = 48
+3 * 17 = 51
+3 * 18 = 54
+3 * 19 = 57
+3 * 20 = 60
+-----------------
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+Array:-
+---------
+->like variables Arrays are also used to store the data.
+->Array can handle any type of data.
+->Array size is scalable.
+->the main advantage in array is we should not mention what type  of data to store.
+->array data must be put in these brackets "[ ]".
+->array index must be starts with "0".
+->to check the length of the array we use one property i.e Arrayname.length; ex:- student1.length;
+
+-------------------
+example program:-
+----------
+var varname=[];
+ex:-var student1=[101,"krishna",25,"good"];
+student1.length;
+4
+
+->to insert new data in already existing array
+ex:-student1[4]="insured";
+       student1[7]=8;
+       student1[5]="experience";
+
+for(var i=0; i<student1.length;i++){
+	document.write("data in index no: "+ i + "is: " + student1[i] + "<br>");
+}
+for (i in student1){
+	document.write(data in  index no:" + i + "is:" + durga[i] + "<br>");
+}
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+JavaScript Functions:-
+----------------------------
+->A JavaScript function is a block of code designed to perform a particular task.
+->A JavaScript function is executed when "something" invokes it (calls it).
+->javaScript functions are defined with the "function keyword".
+->js functions are of two types:-
+-------------------------------------
+1) built-in function(or) gloabal (or) predefined(system defined)
+2)user defined(customized)
+
+built-in functions are two types:-
+---------------------------------------
+isNaN();
+encodeURI();
+decodeURI();
+isFinite();
+parseInt();
+parseFloat();
+eval();
+toString();
+decodeURIComponent();
+encodeURIComponent();
+escape();(not in use right now)
+Number();
+String();
+unescape();(not in use right now)
+------------------------
+
+Function Syntax:-
+------------------------
+
+function fnName(p1,p2){
+	            |      |
+	parameter1,parameter2
+}
+example:-
+---------
+function fnName(myval){
+	document.write(myval * myval);
+}
+fnName(8);
+               |
+     arguments
+------------------------
+->If it is not having any value means then it is called as non-parameterized function.
+
+->encodeURI():-
+--------------
+->it will add browser encoded value in the spaces.like % etc...
+
+
+->functions:-
+--------------
+functions allow you to group together some code, give this code a name, and reuse it later,addressng it by the name  you gave it. let's see an example:
+
+example:
+function sum(a,b){
+return a+b;
+}
+calling function:-
+----------------
+->let's call the funciton sum(), passing two agruments and assigning the value that the functions returns to the variable result:
+sum(1,2);
+Result
+3
+---------------------
+funtions and types:-
+---------------------
+1)Anonymous functions
+2)callback functions
+3)IIFE(immediately invoked function expressions)
+4)function without parameter
+5)function with parameter
+6)function with return value
+7)inner or private functions
+8)function rewrite itself
+9)recursive functions
+-----------------------------
+1)IIFE(immediately invoked function expression):-
+-----------------------------------------------------------
+->In this memory will not allocate
+->why because it wont have variable name.
+->In this two () () will be there.One is funciton and another is  for execution .
+
+example:-
+---------
+with using iife:-
+-----------------
+(function(){
+	document.write(8 * 5);
+})()
+
+without using iife:-
+-----------------------
+function disresult(){
+	document.write(4 + 8);
+}
+disresult();
+------------
+with using iife using parameters:-
+-------------------------------------
+(function(a,b){
+	documetn.write(a + b);
+})(42,41);
+-------------------
+2)anonymous functions:-
+----------------------------
+->it means it wont have names.
+
+example program:-
+---------------------
+var  varname=function(){
+alert("display the result");
+}
+varname();
+-----------------------------
+3)named functions:-
+-----------------------
+
+4)function without parameters:-
+-------------------------------------
+example program:-
+----------------------
+function woPara(){
+	document.write(8 *9);
+}
+woPara();
+
+->In a function if we dont put the var means then that var will be treated as global.
+5) function with parameter:-
+---------------------------------
+-> we use this mostly for  making dynamic actions.
+example :-
+----------
+function wparam(a,b,c){
+	document.write(a * b* d);
+}
+wparam(2,4,5);
+
+
+keywords:-
+------------
+arguments -> it is going to carry all your parameters.
+ex:-arguments.length
+
+
+---------------------------------------------
+
+->Events:-
+------------
+1)
+2)
+3)
+4)
+ 
+mouse events:-
+---------------
+onmouseover
+ondblclick
+onmouseout
+oncontextmenu
+---------------------------------------------------
+->DOM:-
+---------
+->DOM stands for document object model.
+->
+
+
+
+
+------------------------------------------------------------------------------
+->Events Listeners:-
+----------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

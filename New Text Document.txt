@@ -1,0 +1,20 @@
+pseudo elemetns
+----------------
+
+->pseduo element is used to style specified parts of an element
+for example, 
+.style the first letter, or line, of an element
+.insert conetent before, or after, the content of an element
+
+syntax:-
+-------
+p::first-letter{
+	color:#ff0000;
+	font-size:xx-large;
+}
+
+
+------------------
+
+
+

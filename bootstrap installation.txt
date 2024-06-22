@@ -1,0 +1,41 @@
+Bootstrap :-
+-----------
+Offline method:-
+------------------------------------------------------------------------------------------------------------------------------------------------
+Step 1:- Open any browser(google,firefox)and type bootstrap.
+Step 2:- Then go to https://getbootstrap.com/
+Step 3:- Change the version 4.0 to v3.3.7
+Step 4:- And click on Download bootstrap button.
+Step 5:- After that the site open in that site we have to click on the ->Getting started>download->scroll the site and then click on Download bootstrap .Then a rar file will download in to your pc.
+Step 6:- Extract that folder.
+Step 7:- In that we will have 3 folders containing name css,js.
+Step 8:- Copy all the 2 files and paste it in required folder.
+Step 9:- Create a new text document  in that folder and save it as index.html if needed we can also create main.css file also.
+Step 10:- Now go to getbootstrap.com and then by scrolling you can see BASIC TEMPLATE .
+Step 11:- Copy that code and paste that code in .html file.
+Step 12:- Check whether that code is working properly or not.By removing the <H1>font</H1>  tag only.
+Step 13:- Now write <link href="css/bootstrap.min.css" rel="styelsheet" type="text/css"> in head part.
+Step 14:- Now go to http://jquery.com/ then click on download jquery version 3.3.1 
+	and click the Download the compressed, production jQuery 3.3.1 and open in browser and press ctrl + s and save it in your file 	location.and link with <script src="jquery-3.3.1.min.js><script> in bottom of the <body>
+Step 15:- Search "popperjs cdn"  in google.Now click on that website https://cdn.jsdelivr.net/npm/popper.js/
+	In that website click dist in that popper.min.js now  it will open in browser.now press ctrl+s  and save in your file location.
+Step 14:- Now write <script src="js/bootstrap.js"></script> in  bottom of the <body>.
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+Online method:-
+-----------------
+Step 1:- Open any browser(google,firefox) and type bootstrap.
+Step 2:- Then go to https://getbootstrap.com/
+Step 3:- Change the version 4.0 to v3.3.7
+Step 4:- Go to Documentation
+Step 5:- Scroll down and go to Starter template.
+Step 6:- Now copy the code below the Starter template.
+Step 7:- Now paste it in html document.And run it.
+Step 8:- To check whether the code is working properly or not. By removing the link in the <head> </head>tag.We can know whether it is working or not.
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+https://cdnjs.com/libraries/twitter-bootstrap

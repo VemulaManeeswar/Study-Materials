@@ -1,0 +1,99 @@
+Bootstrap:-
+-----------
+
+
+->Bootstrap is a Responsive Framework.
+-> These are predefined in Bootstrap.
+	1)HTML
+	2)CSS
+	3)Java Script
+	4)JQuery
+->Everything is Predefined in Bootstrap.
+
+->Bootstrap Versions
+	1)V2.3.2
+	2)V3.3.7(Right now we are using this)
+	3)V4 Alpha 6
+	4)Latest(4.0)
+
+
+-> Bootstrap is having four devices.
+	1)XS(Extra Small) (Range <576)
+	2)SM(Small) (Range 768)
+	3)MD(Medium) (Range 992)
+	4)LG(Large) (Range 1200)
+	5)XL(Extra large) (Range 1200>)
+
+-> Bootstrap Containers ranges:-
+-------------------------------------
+->By default XS and SM container width is 100%.
+->Tab - 750px
+->Desktop - 970px
+->Large - 1170
+
+
+-> Bootstap Classes:-
+-------------------------
+.container-fluid
+.container
+.row
+.img-responsive
+.img-circle
+.img-rounded
+.img-thumbnail
+.bg-info
+.bg-primary
+.bg-success
+.bg-danger
+.bg-warning
+.list-inline
+.nav-tabs
+.pull-right
+.text-center
+.text-uppercase
+.center-block
+.text-justify
+.btn btn-primary()
+.hidden-lg()
+.text-primary
+.text-info
+.text-danger
+.btn-success
+.text-captalize
+.gap
+.navbar-default(gray)
+.navbar-nav
+.navbar-inverse(black)
+.active
+.caret
+.btn-group
+.pagination
+.pages
+.simple collapsible
+.nav nav-tabs
+.form
+.breadcrumb
+.media
+
+
+
+
+bootstrap components:-
+---------------------------
+progressive bars
+accordion
+thumbnail
+dropdowns
+navbar
+navbar dropdown
+mega dropdown
+forms
+tabs
+animations
+toggle navigation
+cards
+modal
+tooltip
+jumbotron
+cubic-bezier
+

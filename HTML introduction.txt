@@ -1,0 +1,184 @@
+->What is Html?
+->HTML stands for hyper text mark up language.
+->HTML describes the structure of the webpages using markup.
+->HTML elements are reprsented by tags.
+->Browser don't display html tags but use them to show the content of the page.
+
+editors:-
+----------
+notepad
+notepad++
+brackets
+
+->Html starts with document type of declaration
+<!DOCTYPE html>
+->HTML document begins with <html> and ends with </html>
+->the visible part of the html document is between <body> and ends with </body>
+
+HTML Headings:-
+--------------------
+->HTML headings are defined with the <h1> to <h6>
+-> <h1> defines the most important heading
+-> <h6> defines the least important heading.
+
+HTML Paragraphs:-
+----------------------
+->html paragraphs are defined with the <p>  and ends with </p> tag.
+
+HTML Links:-
+-----------------
+HTML links are defined with <a> tag and ends with </a>
+eg:- <a href="https://www.facebook.com">This is a hyper link</a>
+
+HTML Images:-
+--------------------
+->HTML images are defined with <img> tag.
+eg:-<img src="elephant.jpg" alt="vamsi" width="104" height="174">
+->it doesnt have closing tag.
+
+HTML Elements:-
+-------------------
+->what is meant by element?
+A content with opening and closing tag is called element 
+eg:-<p>maneeswar</p>
+
+HTML Attributes:-
+--------------------
+->Attributes provide additional information about an element.
+->eg:- width="100"
+->here width is an attribute name.
+->and 100 is value of the element.
+eg:-<img src="img_girl.jpg" width="500" height="600">
+
+HTML Horizontal Rules:-
+-----------------------------
+->the <hr> element is used to seperate content(or define a change) in an HTML page.
+->it is used to draw horizontal line below the content.
+->it is also called <hr> tag.
+-> it doesn't have closing tag.
+
+HTML Line Break:-
+----------------------
+->If you want a line break without starting a new paragraph use this tag.
+->It also called <br> tag.
+-> <br> is nothing but new line.
+
+HTML Pre Element:-
+-------------------------
+-> the text inside a pre element is displayed in a fixed width and font and it preservers both spaces and line breaks.
+-> it is defined with <pre> and ends with <pre>.
+
+HTML Styles:-
+----------------
+->HTML Background Color:-
+----------------------------------
+-> The background-color property defines the background color of an HTML element.
+-> eg:- <body style="background-color:powderblue;">
+->HTML Text Color:-
+------------------------
+->To apply color to the text we use this.
+eg:- <h1 style="color:blue;">this is a heading</h1>
+->HTML Fonts:-
+--------------------
+->The font family property defines the font to be used for an html element.
+eg:- <h1 style="font-family:verdana;">This is a heading</h1>
+->HTML text size:-
+--------------------
+->the font size property defines the text size for an html element.
+eg:- <h1 style= "font-size:300%;"> this is an heading</h1>
+->HTML Text Alignment:-
+------------------------------
+->the text-align property defines the horizontal text alignment for an element.
+eg:- <h1 style="text-align:center;"> Centered heading</h1>
+
+->HTML Text Formating:-
+----------------------------
+->HTML Formating Elements:-
+-------------------------------------
+->Formatting elements were designed to display special type of text.
+
+<b> - Bold text
+<strong> - Important text
+<i> - Italic text
+<em> - Emphasized text
+<mark> - Marked text
+<small> - Small text
+<del> - Deleted text
+<ins> - Inserted text
+<sub> - Subscript text
+<sup> - Superscript text
+
+HTML Quotation and Citation Elements:-
+------------------------------------------------
+<q>quotation</q> - double quotes
+<blockquote> - it means one tab space</blockquote>
+<abbr>abbrivation</abbr> it used for to underline the text in dotted format.
+<address>the content kept in this will be shown as italic</address> 
+<cite>Browsers usually display <cite> elements in italic.</cite>
+<bdo dir="rtl">This line will be written from right to left</bdo> - bi-directional override.
+
+HTML Comments:-
+-----------------------
+<!-- comment--> html comments are written like this.
+
+HTML Colors:-
+------------------
+HTML colors are specified using predefined color names, or RGB, HEX, HSL(hue, saturation,lightness), RGBA, HSLA values.
+
+Background Color :-You can set the background color for HTML elements.
+eg:- <h1 style="background-color:DodgerBlue;">Hello World</h1>
+
+Text Color:- you can apply color to an element.
+eg:- <h1 style="color:Tomato;">Hello World</h1>
+
+Border Color:-You can set the color of borders.
+eg:-<h1 style="border:2px solid Violet;">Hello World</h1>
+
+
+
+RGB Value:-
+-------------
+->In HTML, a color can be specified as an RGB value, using this formula:
+
+->rgb(red, green, blue)
+
+->Each parameter (red, green, and blue) defines the intensity of the color between 0 and 255.
+
+->For example, rgb(255, 0, 0) is displayed as red, because red is set to its highest value (255) and the others are set to 0.
+
+->To display the color black, all color parameters must be set to 0, like this: rgb(0, 0, 0).
+eg:- <h1 style="background-color:rgb(106, 90, 205);">rgb(106, 90, 205)</h1>
+
+->To display the color white, all color parameters must be set to 255, like this: rgb(255, 255, 255).
+
+->Shades of gray are often defined using equal values for all the 3 light sources:
+eg:-<h1 style="background-color:rgb(120, 120, 120);">rgb(120, 120, 120)</h1>
+
+HEX Value:-
+-------------
+->In HTML, a color can be specified using a hexadecimal value in the form:
+->#rrggbb
+->Where rr (red), gg (green) and bb (blue) are hexadecimal values between 00 and ff (same as decimal 0-255).
+eg:- <h1 style="background-color:#ffa500;">#ffa500</h1>
+->Shades of gray are often defined using equal values for all the 3 light sources:
+eg:- <h1 style="background-color:#787878;">#787878</h1>
+
+HSL Value:-
+--------------
+->In HTML, a color can be specified using hue, saturation, and lightness (HSL) in the form:
+-> hsl(hue, saturation, lightness)
+->Hue is a degree on the color wheel from 0 to 360. 0 is red, 120 is green, and 240 is blue.
+->Saturation is a percentage value, 0% means a shade of gray, and 100% is the full color.
+->Lightness is also a percentage, 0% is black, 50% is neither light or dark, 100% is white
+eg:- <h1 style="background-color:hsl(39, 100%, 50%);">hsl(39, 100%, 50%)</h1>
+Saturation:-
+------------
+->Saturation can be described as the intensity of a color.
+
+->100% is pure color, no shades of gray
+
+->50% is 50% gray, but you can still see the color.
+
+0% is completely gray, you can no longer see the color.
+
+

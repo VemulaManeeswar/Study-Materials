@@ -1,0 +1,8 @@
+Path setting for icons through font awesome 5 version:-
+---------------------------------------------------
+->First we have to download latest font awesome version.
+->And then we have to go web-fonts-with-css folder.open that folder.
+->In that copy webfonts  folder.
+->And paste it in your root folder.
+->In that folder only open css folder.
+->copy fontawesome-all.min file and paste it in root file.

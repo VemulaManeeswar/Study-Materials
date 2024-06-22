@@ -1,0 +1,40 @@
+//Creating particular animation for an element
+@keyframe customName{
+	declare%{
+	{ 
+	//Statement goes here
+	}
+	declare%
+	{
+	//Statement goes here
+	}
+	declare%{
+	//statement goes here
+	}
+	}
+//Initilizing animation to the element
+element name{
+	animation : animationn-name duration iteration (loop) some-properties
+}
+
+->keyframes - It is a css keyword.
+animation:duration timing-function delay iteration-count direction fill-mode play-state name.
+
+
+
+****************************************************************************
+-> How to create animate.css?
+----------------------------------------
+->It is a css frame work
+
+->Go to google and type animate.css
+->Now click on this site https://daneden.github.io/animate.css/
+->Then that site will open.Now choose the animation effect and click on animate it button.
+-> Now click on Download animate.css and then one file will be downloaded in your local disk.
+->Now paste that folder in folder where your index.html located.
+->Now open your code (index.html) and link that file in the html document.
+->Now write animated in class where you want to animate.
+eg:-<img src="images/banner.jpg" class="img-responsive animated lightSpeedIn" >
+syntax:- aninmated animated_effect_name
+****************************************************************************
+
